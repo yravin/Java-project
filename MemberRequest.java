@@ -1,0 +1,16 @@
+package com.learnapi.test.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+public class MemberRequest {
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("email")
+    private String email;
+}
